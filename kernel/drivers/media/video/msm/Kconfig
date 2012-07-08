@@ -212,6 +212,13 @@ config MSM_VPE
 	---help---
 	  Enable support for Video Pre-processing Engine
 
+config MSM_VPE_STANDALONE
+	tristate "Qualcomm MSM Video Pre-processing Engine support"
+	depends on MSM_CAMERA && (ARCH_MSM7X30 || ARCH_MSM8X60)
+	default y
+	---help---
+	  Enable support for Video Pre-processing Engine
+
 config QUP_EXCLUSIVE_TO_CAMERA
 	bool "QUP exclusive to camera"
 	depends on MSM_CAMERA

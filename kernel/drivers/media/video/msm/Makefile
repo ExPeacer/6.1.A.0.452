@@ -30,8 +30,12 @@ else
 endif
 obj-$(CONFIG_ARCH_MSM8960) += msm_io_8960.o msm_vfe32.o msm_vpe.o
 obj-$(CONFIG_MT9T013) += mt9t013.o mt9t013_reg.o
+obj-$(CONFIG_MT9D112) += mt9d112.o mt9d112_reg.o
 obj-$(CONFIG_SN12M0PZ) += sn12m0pz.o sn12m0pz_reg.o
 obj-$(CONFIG_MT9P012) += mt9p012_reg.o
+obj-$(CONFIG_SEIX006) += seix006.o seix006_cam_devdrv_table.o
+obj-$(CONFIG_OVM7692) += ovm7692.o ovm7692_reg.o
+obj-$(CONFIG_MT9V114) += mt9v114.o mt9v114_reg.o
 obj-$(CONFIG_MSM_CAMERA_AF_FOXCONN) += mt9p012_fox.o
 obj-$(CONFIG_MSM_CAMERA_AF_BAM) += mt9p012_bam.o
 obj-$(CONFIG_MT9P012_KM) += mt9p012_km.o mt9p012_km_reg.o
@@ -58,3 +62,6 @@ obj-$(CONFIG_SEMC_CAM_MAIN) += semc_sensor_main.o
 obj-$(CONFIG_SEMC_CAM_SUB) += semc_sensor_sub.o
 obj-$(CONFIG_SEMC_VPE) += semc_vpe.o
 obj-$(CONFIG_SEMC_VPE1) += semc_vpe1.o
+obj-$(CONFIG_SEMC_CAMERA_MODULE) += semc_camera_module.o
+obj-$(CONFIG_SEMC_SUB_CAMERA_MODULE) += semc_sub_camera_module.o
+obj-$(CONFIG_MSM_GEMINI) += msm_gemini_dev.o msm_gemini_sync.o msm_gemini_core.o msm_gemini_hw.o msm_gemini_platform.o
